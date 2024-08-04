@@ -13,7 +13,8 @@ RUN apt-get update \
     && rm -f /lib/systemd/system/multi-user.target.wants/getty.target \
     && apt-get clean
 
-RUN pip3 install --upgrade pip \
+RUN rm -f /usr/lib/python3.11/EXTERNALLY-MANAGED \
+    && pip3 install --upgrade pip \
     && pip3 install ansible cryptography
 
 RUN mkdir -p /etc/ansible \

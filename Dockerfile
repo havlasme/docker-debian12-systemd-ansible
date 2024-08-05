@@ -20,7 +20,8 @@ RUN rm -f /usr/lib/python3.11/EXTERNALLY-MANAGED \
     && pip3 install ansible cryptography
 
 RUN mkdir -p /etc/ansible \
-    && echo "[local]\nlocalhost ansible_connection=local" > /etc/ansible/hosts
+    && echo "[local]\nlocalhost ansible_connection=local" > /etc/ansible/hosts \
+    && echo "[defaults]\nremote_tmp = /tmp" > /etc/ansible/ansible.cfg
 
 VOLUME ["/sys/fs/cgroup", "/tmp", "/run"]
 CMD ["/lib/systemd/systemd"]

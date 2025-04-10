@@ -1,13 +1,13 @@
-Debian 12 "bookworm" Ansible Molecule Test Image
-================================================
+Debian 12 "bookworm" Ansible Molecule Testing Image
+===================================================
 
 [![CI][gitlabci-image]][gitlabci-link]
 [![Apache-2.0 license][dockerhub-image]][dockerhub-link]
 [![Apache-2.0 license][license-image]][license-link]
 
-Debian 12 "bookworm" based image intended for [Ansible](https://www.ansible.com/) role testing using [Molecule](https://ansible.readthedocs.io/projects/molecule/).
+[Debian 12 "bookworm"]((https://hub.docker.com/_/debian)) based image intended for testing [Ansible](https://www.ansible.com/) roles using [Molecule](https://ansible.readthedocs.io/projects/molecule/).
 
-This image is built automatically on each commit to the `main` branch, and published on the [Docker Hub](https://hub.docker.com/) as [`havlasme/debian12-systemd-ansible:latest`](https://hub.docker.com/r/havlasme/debian12-systemd-ansible).
+This image is automatically built on each commit to the `main` branch and published on the [Docker Hub](https://hub.docker.com/) as [`havlasme/debian12-systemd-ansible:latest`](https://hub.docker.com/r/havlasme/debian12-systemd-ansible).
 
 How to Use
 ----------
@@ -27,7 +27,7 @@ platforms:
 How to Build
 ------------
 
-To build the image locally simply run:
+To build the image locally, simply run:
 
 ```shell
 make build

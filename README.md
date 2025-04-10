@@ -5,7 +5,7 @@ Debian 12 "bookworm" Ansible Molecule Testing Image
 [![Apache-2.0 license][dockerhub-image]][dockerhub-link]
 [![Apache-2.0 license][license-image]][license-link]
 
-[Debian 12 "bookworm"]((https://hub.docker.com/_/debian)) based image intended for testing [Ansible](https://www.ansible.com/) roles using [Molecule](https://ansible.readthedocs.io/projects/molecule/).
+[Debian 12 "bookworm"](https://hub.docker.com/_/debian) based image intended for testing [Ansible](https://www.ansible.com/) roles using [Molecule](https://ansible.readthedocs.io/projects/molecule/).
 
 This image is automatically built on each commit to the `main` branch and published on the [Docker Hub](https://hub.docker.com/) as [`havlasme/debian12-systemd-ansible:latest`](https://hub.docker.com/r/havlasme/debian12-systemd-ansible).
 
